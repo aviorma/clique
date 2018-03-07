@@ -1,0 +1,13 @@
+#!/bin/bash
+java -jar target/clique-1.0-SNAPSHOT-fat.jar start -cluster clique.verticles.EventAttendeesHandler --java-opts "-Xmx150m"
+java -jar target/clique-1.0-SNAPSHOT-fat.jar start -cluster clique.verticles.EventInterestedsHandler --java-opts "-Xmx150m"
+java -jar target/clique-1.0-SNAPSHOT-fat.jar start -cluster clique.verticles.EventMaybesHandler --java-opts "-Xmx150m"
+java -jar target/clique-1.0-SNAPSHOT-fat.jar start -cluster clique.verticles.LikePostsHandler --java-opts "-Xmx150m"
+java -jar target/clique-1.0-SNAPSHOT-fat.jar start -cluster clique.verticles.PostLikesHandler --java-opts "-Xmx150m"
+java -jar target/clique-1.0-SNAPSHOT-fat.jar start -cluster clique.verticles.SharedTableDataInsertionHandler --java-opts "-Xmx150m"
+java -jar target/clique-1.0-SNAPSHOT-fat.jar start -cluster clique.verticles.UserEventsHandler --java-opts "-Xmx150m"
+java -jar target/clique-1.0-SNAPSHOT-fat.jar start -cluster clique.verticles.UserInitHandler --java-opts "-Xmx150m"
+java -jar target/clique-1.0-SNAPSHOT-fat.jar start -cluster clique.verticles.UserLikesHandler --java-opts "-Xmx150m"
+java -jar target/clique-1.0-SNAPSHOT-fat.jar start -cluster clique.verticles.UserTokenHandler --java-opts "-Xmx150m"
+java -jar target/clique-1.0-SNAPSHOT-fat.jar start -cluster clique.verticles.UserTokenHandler --java-opts "-Xmx150m"
+java -jar target/clique-1.0-SNAPSHOT-fat.jar start -cluster clique.verticles.FacebookAuthenticate --java-opts "-Xmx150m"
